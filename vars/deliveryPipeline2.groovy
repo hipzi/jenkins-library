@@ -59,7 +59,7 @@ def call(Map param){
 					}
 				}
 				steps {
-					sh 'docker run -p 8080:8181 my-app'
+					sh 'docker run -p 8181:8181 my-app'
 				}
 			}
 			stage('Run app') {
