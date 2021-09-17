@@ -70,7 +70,7 @@ def call(Map param){
 				}
 				steps {
 					sh 'cd /home/hipzi/Jenkins-future-2'					
-					sh 'java -jar my-app.jar'
+					sh 'java -jar target/*.jar'
 				}
 			}
 		}
