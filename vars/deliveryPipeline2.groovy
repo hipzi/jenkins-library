@@ -49,7 +49,7 @@ def call(Map param){
 					}
 				}
 				steps {
-					sh 'docker build -t my-app'
+					sh 'docker build -t my-app . '
 				}
 			}
 			stage('Run app container') {
